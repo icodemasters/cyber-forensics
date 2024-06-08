@@ -7,8 +7,8 @@ import { getAllTags, sortPosts, sortTagsByCount } from "@/lib/utils";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "My blog",
-  description: "This is a description",
+  title: "CMF blog",
+  description: "Cyberforensics blog",
 };
 
 const POSTS_PER_PAGE = 5;
@@ -38,7 +38,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         <div className="flex-1 space-y-4">
           <h1 className="inline-block font-black text-4xl lg:text-5xl">Blog</h1>
           <p className="text-xl text-muted-foreground">
-            My ramblings on all things web dev.
+            Cyber security and forensic news and blog.
           </p>
         </div>
       </div>
