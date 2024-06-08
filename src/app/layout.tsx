@@ -1,13 +1,23 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { SiteHeader } from "@/components/site-header";
+import { Providers } from "@/components/providers";
+import { siteConfig } from "../../config/site";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Cyberforensics",
-  description: " Монголын цахим криминалистикийн хүрээлэн ",
+  title: siteConfig.name,
+  description: siteConfig.description,
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
 };
 
 export default function RootLayout({
@@ -19,14 +29,15 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body
         className={cn(
-          "relative h-full font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased",
           inter.className
         )}>
-        <main className="relative flex flex-col min-h-screen">
-          <div className="flex-grow flex-1">
-            {children}
+        <Providers>
+          <div className="relative flex min-h-dvh flex-col bg-background">
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
           </div>
-        </main>
+        </Providers>
       </body>
     </html>
   );
