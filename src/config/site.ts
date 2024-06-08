@@ -1,5 +1,5 @@
 export const siteConfig = {
-    name: "Cyberforensics blog",
+    name: "Cyberforensics",
     url: "https://cyber-forensics.info",
     description: "Монголын цахим криминалистикийн хүрээлэн",
     author: "Cyberforensics",

@@ -7,7 +7,7 @@ import { getAllTags, sortPosts, sortTagsByCount } from "@/lib/utils";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CMF blog",
+  title: "Blog",
   description: "Cyberforensics blog",
 };
 

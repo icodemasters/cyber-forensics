@@ -3,8 +3,8 @@ import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Me",
-  description: "Information about me",
+  title: "About Cyberforensics",
+  description: "Information About Cyberforensics",
 };
 
 export default async function AboutPage() {
