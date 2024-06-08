@@ -1,6 +1,6 @@
 "use client";
 
-import { siteConfig } from "../../config/site";
+import { siteConfig } from "../config/site";
 import { Icons } from "./icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

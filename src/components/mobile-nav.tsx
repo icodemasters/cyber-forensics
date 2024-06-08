@@ -7,7 +7,7 @@ import { Menu } from "lucide-react";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
 import { Icons } from "./icons";
-import { siteConfig } from "../../config/site";
+import { siteConfig } from "../config/site";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);

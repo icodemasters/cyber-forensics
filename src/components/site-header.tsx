@@ -5,7 +5,7 @@ import { Icons } from "./icons";
 import { MainNav } from "./main-nav";
 import { MobileNav } from "./mobile-nav";
 import { ModeToggle } from "./mode-toggle";
-import { siteConfig } from "../../config/site";
+import { siteConfig } from "../config/site";
 
 export function SiteHeader() {
   return (
